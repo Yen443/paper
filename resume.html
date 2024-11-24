@@ -99,6 +99,26 @@
             margin-bottom: 10px;
         }
 
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0071e3;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px; /* 改為圓角矩形 */
+            padding: 10px 20px; /* 按鈕大小由內距決定 */
+            font-size: 16px; /* 顯示清晰的文字大小 */
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .back-to-home:hover {
+            background: #005bb5;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
         footer {
             background: rgba(0, 0, 0, 0.7); /* 半透明背景 */
             color: white;
@@ -180,5 +200,8 @@
     <footer>
         <p>&copy; 2024 李彥鋒</p>
     </footer>
+
+    <!-- Back to Home Button -->
+    <a class="back-to-home" href="index.html">返回首頁</a>
 </body>
 </html>
