@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李彥鋒 - 履歷表</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('C:/Users/user/Desktop/20241009/head.jpg') no-repeat center center;
+            background-size: cover; /* 確保背景圖片覆蓋整個頁面 */
+            color: #333;
+        }
+
+        header {
+            height: 150px; /* 減小高度 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色覆蓋，提升文字對比度 */
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* 圖片與文字的間距 */
+        }
+
+        header h1 img {
+            width: 60px; /* 限制圖片寬度 */
+            height: 60px; /* 限制圖片高度 */
+            border-radius: 50%; /* 圓形圖片 */
+            border: 2px solid white; /* 添加邊框 */
+        }
+
+        header p {
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background: #575757;
+            border-radius: 5px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info div {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>
+            <img src="C:/Users/user/Desktop/20241009/head.jpg" alt="李彥鋒">
+            李彥鋒
+        </h1>
+        <p>碩士研究生 - 光電技術研究所</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#profile">個人資料</a></li>
+            <li><a href="#education">學歷</a></li>
+            <li><a href="#experience">工作經歷</a></li>
+            <li><a href="#skills">專業技能</a></li>
+            <li><a href="#projects">專案</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="profile">
+            <h2>個人資料</h2>
+            <div class="info">
+                <div><strong>姓名：</strong>李彥鋒</div>
+                <div><strong>電話：</strong>+886 123 456 789</div>
+                <div><strong>Email：</strong>yenfeng.li@example.com</div>
+                <div><strong>地址：</strong>台灣高雄市</div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>學歷</h2>
+            <ul>
+                <li><strong>國立高雄科技大學</strong> - 光電技術研究所 (2021 - 2024)</li>
+                <li><strong>國立中山大學</strong> - 材料科學學士 (2017 - 2021)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>工作經歷</h2>
+            <ul>
+                <li><strong>研究助理</strong> - 國立高雄科技大學 (2021 - 至今)</li>
+                <li><strong>IC 設計工程師</strong> - Anyou 科技 (2020 - 2021)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>專業技能</h2>
+            <ul>
+                <li>PVD 和 CVD 設備操作</li>
+                <li>半導體製程整合</li>
+                <li>IC 佈局設計 (Laker, Virtuoso)</li>
+                <li>熟悉 Linux 環境</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>專案</h2>
+            <ul>
+                <li><strong>石墨烯製備研究</strong> - 發表於 2023 年台灣薄膜技術學會會議</li>
+                <li><strong>半導體元件模擬</strong> - 與 Anyou 科技合作</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 李彥鋒</p>
+    </footer>
+</body>
+</html>
