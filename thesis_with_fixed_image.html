@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碩士論文 - 李彥鋒</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: "DFKai-SB", "KaiTi", serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem; /* 副標題字體大小 */
+            margin: 5px 0 0 0;
+        }
+
+        /* 圖片樣式 */
+        .header-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 60px;
+            width: auto;
+        }
+
+        nav {
+            background: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background: #575757;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        /* 折疊式內容樣式 */
+        .collapsible {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .collapsible:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>碩士論文 - 李彥鋒</h1>
+        <p>化學氣相沉積製備鈦化碳/矽複合材料石墨烯儲能材料比較研究</p>
+        <!-- 放置圖片 -->
+        <img src="C:/Users/user/Desktop/20241009/NKUST.png" class="header-image" alt="Header Image">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#abstract">摘要</a></li>
+            <li><a href="#chapter1">第一章 緒論</a></li>
+            <li><a href="#chapter2">第二章 文獻探討</a></li>
+            <li><a href="#chapter3">第三章 實驗流程</a></li>
+            <li><a href="#chapter4">第四章 分析與討論</a></li>
+            <li><a href="#chapter5">第五章 結論與展望</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- 摘要部分 -->
+        <section id="abstract">
+            <h2>摘要</h2>
+            <p>石墨烯為目前最薄且最堅硬之奈米材料，由於各項良好特性，被期待發展出新一代電子元件或電晶體...</p>
+        </section>
+        <!-- 第一章 -->
+        <section id="chapter1">
+            <h2>第一章 緒論</h2>
+            <button class="collapsible">1.1 前言</button>
+            <div class="content">
+                <p>地球暖化，全球極端氣候湧現...</p>
+            </div>
+            <button class="collapsible">1.2 石墨烯概述</button>
+            <div class="content">
+                <p>石墨烯是一種單層碳原子組成的二維材料...</p>
+            </div>
+        </section>
+        <!-- 第二章 -->
+        <section id="chapter2">
+            <h2>第二章 文獻探討</h2>
+            <button class="collapsible">2.1 石墨烯製備方法</button>
+            <div class="content">
+                <p>石墨烯製備方法多種多樣，主要可分為由上而下及由下而上兩大類...</p>
+            </div>
+            <button class="collapsible">2.2 石墨烯應用</button>
+            <div class="content">
+                <p>石墨烯在電子與光電元件、高分子複合材料...</p>
+            </div>
+        </section>
+        <!-- 第三章 -->
+        <section id="chapter3">
+            <h2>第三章 實驗流程</h2>
+            <button class="collapsible">3.1 實驗架構</button>
+            <div class="content">
+                <p>以鈦（Ti）、矽(Si)，作為實驗靶材...</p>
+            </div>
+        </section>
+        <!-- 第四章 -->
+        <section id="chapter4">
+            <h2>第四章 分析與討論</h2>
+            <button class="collapsible">4.1 結果與數據</button>
+            <div class="content">
+                <p>實驗數據顯示，石墨烯結構在高溫下具有穩定性...</p>
+            </div>
+        </section>
+        <!-- 第五章 -->
+        <section id="chapter5">
+            <h2>第五章 結論與展望</h2>
+            <button class="collapsible">5.1 總結</button>
+            <div class="content">
+                <p>本研究證明，石墨烯在儲能材料領域具有高度潛力...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 碩士論文 - 李彥鋒</p>
+    </footer>
+    <script>
+        // 確保折疊功能正常運作
+        document.addEventListener("DOMContentLoaded", function () {
+            const collapsibles = document.querySelectorAll(".collapsible");
+            collapsibles.forEach(button => {
+                button.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    const content = this.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
