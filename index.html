@@ -6,70 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>碩士論文 - 李彥鋒</title>
     <style>
+        /* 全局樣式 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f7;
+            background: url('https://www.nkust.edu.tw/var/file/0/1000/img/513/477432471.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
             color: #1d1d1f;
+            opacity: 0.95; /* 浮水印效果 */
         }
         header {
-            background: url('https://www.nkust.edu.tw/var/file/0/1000/img/513/477432471.jpg') no-repeat center center;
-            background-size: contain;
-            background-attachment: fixed;
-            opacity: 0.3;
             height: 1000px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
             color: #333;
+            text-align: center;
         }
         header h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px; /* 圖片與文字間距 */
-        }
-        header h1 img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%; /* 圓形圖片 */
-            border: 2px solid #0071e3; /* 加邊框讓圖片更突出 */
-        }
-        header h1 a {
-            color: #0071e3;
-            text-decoration: none;
             font-size: 2.5rem;
             font-weight: 600;
-            padding: 10px 20px;
+            margin: 0;
+        }
+        header h1 a {
+            text-decoration: none;
+            color: #0071e3;
             border: 2px solid #0071e3;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            padding: 5px 15px;
             transition: all 0.3s ease-in-out;
         }
         header h1 a:hover {
-            background-color: #0071e3;
+            background: #0071e3;
             color: white;
-            border-color: white;
         }
         header p {
-            font-size: 2.0rem;
-            margin-top: 10px;
-            color: #1a1a1a;
+            font-size: 2rem;
+            color: #0071e3;
             font-weight: bold;
+            margin: 10px 0;
         }
         header .click-text {
-            display: flex;
-            align-items: center;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: #0071e3;
             font-weight: bold;
         }
         header .click-text .arrow {
             display: inline-block;
             margin-left: 10px;
-            animation: rotate 2s linear infinite; /* 添加持續旋轉動畫 */
+            animation: rotate 2s linear infinite;
         }
         @keyframes rotate {
             0% {
@@ -108,7 +97,13 @@
             border-radius: 5px;
         }
         main section h3 {
-            font-size: 1.2rem;
+
+        background: #469cf2;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+
+            font-size: 1.3rem;
             color: #333;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -121,17 +116,64 @@
             padding: 20px 0;
             font-size: 0.9rem;
         }
+        /* 至頂按鈕 */
+        #toTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0071e3;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: rotate 2s linear infinite; /* 持續旋轉動畫 */
+        }
+        #toTop:hover {
+            background: #005bb5;
+        }
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            header {
+                height: 200px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            main {
+                padding: 10px;
+            }
+            main section h2 {
+                font-size: 1rem;
+            }
+            nav a {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
+        
+        <p>碩士論文：化學氣相沉積製備鈦化碳</p>
+        <p>/矽複合材料石墨烯儲能材料比較研究</p>
         <h1>
-            <div class="click-text">
-                履歷表點擊 <span class="arrow">➯</span>
-            </div>
+        <div class="click-text">
+            履歷表點擊 <span class="arrow">➯</span>
+            
             <a href="resume.html">李彥鋒</a>
+        
+        </div>
         </h1>
-        <p>碩士論文：石墨烯在儲能材料的創新研究</p>
     </header>
     <nav>
         <a href="#abstract">摘要</a>
@@ -144,13 +186,86 @@
     <main>
         <section id="abstract">
             <h2>摘要</h2>
-            <h3>背景</h3>
-            <p>石墨烯為目前最薄且最堅硬之奈米材料，由於各項良好特性，被期待發展出新一代電子元件或電晶體...</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯為目前最薄且最堅硬之奈米材料，由於各項良好特性，
+            被期待發展出新一代電子元件或電晶體；然而與其比較材料，矽雖有高達4200 mAh/g電容量，是商用負極材料十倍以上，
+            但與鋰離子合成密度小，產生高速碰撞，體積會膨脹至原本300%~400%，此劇烈反應不但影響儲能壽命也會導致極板之間崩解，
+            且石墨烯具有在高頻電子器件、儲能器件和柔性電子等方面的潛力，可能會成為矽的有力補充甚至替代材料。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本研究的重點在於利用銅的高擴散性來輔助矽與石墨烯的複合材料合成。我們通過兩階段的製備工藝，成功將鈦碳-
+            矽與石墨烯結合成為複合負極材料。首先，在基板上進行磁控濺鍍，形成鈦碳-矽層，並在過程中通入微量乙炔作為碳源，
+            隨後使用高溫熱退火爐進行不同條件的退火處理，以期形成穩定的鈦化碳/矽與石墨烯複合結構。
+            為進一步分析此複合材料在鈕扣型電池中的儲能性能，我們採用拉曼光譜、高解析掃描電子顯微鏡（SEM）等技術對負極材料進行深入分析。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;實驗結果顯示，隨著退火溫度和時間的優化，所製備的鈦化碳/矽-石墨烯複合材料展現出優異的電化學性能。
+            在拉曼光譜中觀察到石墨烯的 G-band 與 D-band 強度比例的變化，證明了碳材料的缺陷度和結構有序度隨製程條件的調整而有所提升。
+            此外，SEM 成像顯示鈦化碳/矽與石墨烯之間形成了良好的界面結構，有助於減緩矽在充放電過程中的體積變化，從而有效提升負極材料的循環壽命和穩定性。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相比純矽負極材料，本研究所製備的複合材料在多次充放電循環中表現出更高的庫倫效率和更穩定的容量保持率，證實了石墨烯在緩解矽體積膨脹問題上的有效性。此結果顯示，石墨烯不僅可以顯著增強矽負極材料的機械穩定性，還可以在電池中實現更高的比容量，為新一代鋰離子電池負極材料的開發提供了一種可行的技術路徑。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本研究成功合成具備高穩定性與高容量的鈦化碳/矽-石墨烯複合材料，為鋰離子電池負極材料的設計提供了新的思路。未來將進一步優化此複合材料的製備工藝，以實現更高的能量密度和更長的循環壽命。
+
+            <p> <strong>關鍵字：鈦化碳、石墨烯、化學氣相沉積</strong>
+</p>
         </section>
         <section id="chapter1">
             <h2>緒論</h2>
-            <h3>研究目標</h3>
-            <p>地球暖化，全球極端氣候湧現...</p>
+            <h3> <strong>1.1 &nbsp;&nbsp 前言</strong></h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地球暖化，全球極端氣候湧現，
+            天災、病毒肆虐，因此社會各界環保意識抬頭，新興能源及製程技術，成了新一代經濟產業流動趨勢。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能源生醫方面相關技術，值得深入探討，
+            此區塊產業未來可期，尤其病毒、細菌、微生物對電化學轉化特性，目前各醫界仍待論病毒與能源之間結合可能性。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能源石墨烯結構，
+            2004年英國物理學家安德烈·海姆(Sir Andre Konstantin Geim，1958年10月21日—)和
+            康斯坦丁·諾沃肖洛夫(Sir Konstantin Sergeevich "Kostya" Novoselov，1974年8月23日—)實驗由石墨分離出石墨烯，
+            證實了石墨烯可以單獨存在，石墨烯具優異電子遷移率，非常適合做為導電材料，且結構穩定，內部碳原子連結柔韌，
+            受外力原子面可彎曲，不必重新排列適應。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;據文獻指出，有許多金屬可由碳化與其它金屬層，藉由高溫催化成石墨烯 ，
+            綜上述本實驗以TiC作為製備石墨烯主要金屬層。
+</p>
+
+<p>
+            <h3> <strong>1.2 &nbsp;&nbsp 石墨烯（Graphene）概述</strong></h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    石墨烯，一種單層碳原子組成二維材料，
+            具蜂巢狀(六角形晶格結構)，各碳原子通過sp²雜化軌道與周圍碳原子形成共價鍵，結構類似石墨。
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="graphene.png" 
+                    alt="石墨烯結構圖" 
+                    style="width: 900px; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+                <p style="font-size: 1.3rem; color: #666;"><strong>圖 1-1. 石墨烯單層碳原子組成二維材料</strong>
+                <p>碳原子以六角形蜂巢狀排列，通過sp²雜化軌道形成的共價鍵。
+                </p>
+                
+             </div>
+
+
+</p>
+
+
+<p>
+            <h3> <strong>1.3 &nbsp;&nbsp 石墨烯特性</strong></h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯由碳原子以蜂窩狀排列構成單原子層薄膜(圖1-2)，
+            具有高導電性、高強度與彈性、高透光性、高熱導性、獨特量子效應，這些特性使石墨烯在電子、能源、
+            材料科學等多領域都具廣泛應用潛力。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯的第一布里淵區和能帶結構(圖1- 3)具有以下關鍵特點，與傳統的能帶理論不同之處在於：
+            <p><strong>(1)	狄拉克點的獨特性</strong>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在布里淵區的高對稱點 K和K'，價帶和導帶呈現線性相交，形成「狄拉克錐」。這些點被稱為狄拉克點，
+            特性是電子以準質量為零的費米子形式存在，這導致石墨烯中異常高的電導率。
+            <p><strong>(2)	布里淵區的幾何特徵 </strong>
+	            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">➯</span>布里淵區呈現為六邊形對稱結構。
+	            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">➯</span>Γ點是布里淵區的中心。
+	            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">➯</span>M點為 K和K'點之間的中點。
+	            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="arrow">➯</span>K和K'是布里淵區邊界的兩個不等價點，這些點是導帶和價帶交匯的關鍵位置。
+
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="graphene.png" 
+                    alt="石墨烯結構圖" 
+                    style="width: 900px; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+                <p style="font-size: 1.3rem; color: #666;"><strong>圖 1-1. 石墨烯單層碳原子組成二維材料</strong>
+                <p>碳原子以六角形蜂巢狀排列，通過sp²雜化軌道形成的共價鍵。
+                </p>
+                
+             </div>
+
+
+</p>
         </section>
         <section id="chapter2">
             <h2>文獻探討</h2>
@@ -173,8 +288,22 @@
             <p>本研究證明，石墨烯在儲能材料領域具有高度潛力...</p>
         </section>
     </main>
+    <button id="toTop">↑</button>
     <footer>
         <p>&copy; 2024 碩士論文 - 李彥鋒</p>
     </footer>
+    <script>
+        const toTopButton = document.getElementById('toTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                toTopButton.style.display = 'block';
+            } else {
+                toTopButton.style.display = 'none';
+            }
+        });
+        toTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
