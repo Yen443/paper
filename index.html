@@ -109,25 +109,29 @@
         main section h2 {
             background: #0071e3;
             color: #ffffff;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 3px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            font-weight: 1000;
+            border-radius: 100px;
         }
         main section h3 {
 
-        background: #469cf2;
+        
+        
             color: #ffffff;
             padding: 10px;
             border-radius: 5px;
 
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: #333;
             margin-top: 10px;
             margin-bottom: 10px;
             font-weight: 500;
         }
         footer {
-            background: #1d1d1f;
-            color: #f5f5f7;
+            background: #8686c2;
+            color: #ada7d4;
             text-align: center;
             padding: 20px 0;
             font-size: 0.9rem;
@@ -153,6 +157,14 @@
             text-align: left;
             padding: 20px 0;
             font-size: 0.9rem;
+        }
+
+        p {
+           margin: 5px 0; /* 減少段落的上下間距 */
+        padding: 10px; /* 保留內容的內邊距 */
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        color: black;
         }
         /* 至頂按鈕 */
         #toTop {
@@ -198,6 +210,7 @@
             }
         }
     </style>
+    
 </head>
 <body>
     <header>
@@ -223,27 +236,82 @@
     </nav>
     <main>
         <section id="abstract">
-            <h2>摘要</h2>
+        
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4; /* 頁面背景為淺灰色 */
+            line-height: 1.6;
+        }
+
+        details {
+            margin-bottom: 5px; /* 每個折疊框之間的間距 */
+            border: none; /* 移除邊框 */
+        }
+
+        summary {
+    display: flex; /* 使用彈性布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 將箭頭與文字分開 */
+    background-color: #007bff; /* 深藍背景 */
+    color: white; /* 白色文字 */
+    font-size: 1.5rem; /* 增大文字尺寸 */
+    font-weight: bold;
+    padding: 5px 10px; /* 增加內邊距 */
+    border-radius: 5px; /* 圓角效果 */
+    cursor: pointer; /* 鼠標樣式 */
+    outline: none; /* 移除邊框 */
+    transition: background-color 0.3s ease; /* 背景過渡效果 */
+    margin-bottom: 15px; /* 每個標題下方增加距離 */
+}
+
+.arrow {
+    font-size: 1.5rem; /* 與文字大小一致 */
+    transition: transform 0.3s ease; /* 添加旋轉動畫 */
+}
+
+summary:hover .arrow {
+    transform: rotate(90deg); /* 懸停時旋轉90度 */
+}
+
+        p {
+            margin: 0;
+            padding: 15px; /* 段落內邊距 */
+            background-color: #f8f9fa; /* 段落背景淺灰色 */
+            border-radius: 5px; /* 圓角效果 */
+            color: black; /* 文字顏色 */
+        }
+    </style>
+
+</head>
+<body>
+    <details>
+            <summary><span class="arrow">➯</span><h2>摘要</h2></summary>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯為目前最薄且最堅硬之奈米材料，由於各項良好特性，
             被期待發展出新一代電子元件或電晶體；然而與其比較材料，矽雖有高達4200 mAh/g電容量，是商用負極材料十倍以上，
             但與鋰離子合成密度小，產生高速碰撞，體積會膨脹至原本300%~400%，此劇烈反應不但影響儲能壽命也會導致極板之間崩解，
-            且石墨烯具有在高頻電子器件、儲能器件和柔性電子等方面的潛力，可能會成為矽的有力補充甚至替代材料。
+            且石墨烯具有在高頻電子器件、儲能器件和柔性電子等方面的潛力，可能會成為矽的有力補充甚至替代材料。</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本研究的重點在於利用銅的高擴散性來輔助矽與石墨烯的複合材料合成。我們通過兩階段的製備工藝，成功將鈦碳-
             矽與石墨烯結合成為複合負極材料。首先，在基板上進行磁控濺鍍，形成鈦碳-矽層，並在過程中通入微量乙炔作為碳源，
             隨後使用高溫熱退火爐進行不同條件的退火處理，以期形成穩定的鈦化碳/矽與石墨烯複合結構。
-            為進一步分析此複合材料在鈕扣型電池中的儲能性能，我們採用拉曼光譜、高解析掃描電子顯微鏡（SEM）等技術對負極材料進行深入分析。
+            為進一步分析此複合材料在鈕扣型電池中的儲能性能，我們採用拉曼光譜、高解析掃描電子顯微鏡（SEM）等技術對負極材料進行深入分析。</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;實驗結果顯示，隨著退火溫度和時間的優化，所製備的鈦化碳/矽-石墨烯複合材料展現出優異的電化學性能。
             在拉曼光譜中觀察到石墨烯的 G-band 與 D-band 強度比例的變化，證明了碳材料的缺陷度和結構有序度隨製程條件的調整而有所提升。
-            此外，SEM 成像顯示鈦化碳/矽與石墨烯之間形成了良好的界面結構，有助於減緩矽在充放電過程中的體積變化，從而有效提升負極材料的循環壽命和穩定性。
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相比純矽負極材料，本研究所製備的複合材料在多次充放電循環中表現出更高的庫倫效率和更穩定的容量保持率，證實了石墨烯在緩解矽體積膨脹問題上的有效性。此結果顯示，石墨烯不僅可以顯著增強矽負極材料的機械穩定性，還可以在電池中實現更高的比容量，為新一代鋰離子電池負極材料的開發提供了一種可行的技術路徑。
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本研究成功合成具備高穩定性與高容量的鈦化碳/矽-石墨烯複合材料，為鋰離子電池負極材料的設計提供了新的思路。未來將進一步優化此複合材料的製備工藝，以實現更高的能量密度和更長的循環壽命。
+            此外，SEM 成像顯示鈦化碳/矽與石墨烯之間形成了良好的界面結構，有助於減緩矽在充放電過程中的體積變化，從而有效提升負極材料的循環壽命和穩定性。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相比純矽負極材料，本研究所製備的複合材料在多次充放電循環中表現出更高的庫倫效率和更穩定的容量保持率，證實了石墨烯在緩解矽體積膨脹問題上的有效性。此結果顯示，石墨烯不僅可以顯著增強矽負極材料的機械穩定性，還可以在電池中實現更高的比容量，為新一代鋰離子電池負極材料的開發提供了一種可行的技術路徑。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本研究成功合成具備高穩定性與高容量的鈦化碳/矽-石墨烯複合材料，為鋰離子電池負極材料的設計提供了新的思路。未來將進一步優化此複合材料的製備工藝，以實現更高的能量密度和更長的循環壽命。</p>
 
             <p> <strong>關鍵字：鈦化碳、石墨烯、化學氣相沉積</strong>
+    </details>        
+            
 </p>
         </section>
         <section id="chapter1">
-            <h2>緒論</h2>
-            <h3> <strong>1.1 &nbsp;&nbsp 前言</strong></h3>
+        <details>
+            <summary><span class="arrow">➯</span><h2>緒論</h2></summary>
+           <details> 
+            <summary><span class="arrow">➯</span><h3><strong>1.1 &nbsp;&nbsp 前言</strong></h3></summary>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地球暖化，全球極端氣候湧現，
             天災、病毒肆虐，因此社會各界環保意識抬頭，新興能源及製程技術，成了新一代經濟產業流動趨勢。
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能源生醫方面相關技術，值得深入探討，
@@ -255,10 +323,9 @@
             受外力原子面可彎曲，不必重新排列適應。
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;據文獻指出，有許多金屬可由碳化與其它金屬層，藉由高溫催化成石墨烯 ，
             綜上述本實驗以TiC作為製備石墨烯主要金屬層。
-</p>
-
-<p>
-            <h3> <strong>1.2 &nbsp;&nbsp 石墨烯（Graphene）概述</strong></h3>
+            </details>
+    <details>
+            <summary><span class="arrow">➯</span><h3><strong>1.2 &nbsp;&nbsp 石墨烯（Graphene）概述</strong></h3></summary>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     石墨烯，一種單層碳原子組成二維材料，
             具蜂巢狀(六角形晶格結構)，各碳原子通過sp²雜化軌道與周圍碳原子形成共價鍵，結構類似石墨。
@@ -269,19 +336,15 @@
                 <p style="font-size: 1.3rem; color: #666;"><strong>圖 1-1. 石墨烯單層碳原子組成二維材料</strong>
                 <p>碳原子以六角形蜂巢狀排列，通過sp²雜化軌道形成的共價鍵。
                 </p>
-                
+    </details>            
              </div>
 
-
-</p>
-
-
-<p>
-            <h3> <strong>1.3 &nbsp;&nbsp 石墨烯特性</strong></h3>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯由碳原子以蜂窩狀排列構成單原子層薄膜(圖1-2)，
+    <details>
+        <summary><span class="arrow">➯</span><h3><strong>1.3 石墨烯特性</strong></h3></summary>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯由碳原子以蜂窩狀排列構成單原子層薄膜<strong>(圖1-2)</strong>，
             具有高導電性、高強度與彈性、高透光性、高熱導性、獨特量子效應，這些特性使石墨烯在電子、能源、
             材料科學等多領域都具廣泛應用潛力。
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯的第一布里淵區和能帶結構(圖1- 3)具有以下關鍵特點，與傳統的能帶理論不同之處在於：
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯的第一布里淵區和能帶結構<strong>(圖1- 3)</strong>具有以下關鍵特點，與傳統的能帶理論不同之處在於：
             <p><strong>(1)	狄拉克點的獨特性</strong>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在布里淵區的高對稱點 K和K'，價帶和導帶呈現線性相交，形成「狄拉克錐」。這些點被稱為狄拉克點，
             特性是電子以準質量為零的費米子形式存在，這導致石墨烯中異常高的電導率。
@@ -316,11 +379,12 @@
             </p>
 
              </div>
-             <h4>1.3.1 力學性能</h4>
-             <p>1. 高強度：石墨烯的單片層厚度為0.35nm左右（只有水泥尺寸的30,000分之1左右），
+<details>
+             <summary><span class="arrow">➯</span><h4><strong> 1.3.1 力學性能 </strong></h4></summary>
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> 高強度：石墨烯的單片層厚度為0.35nm左右（只有水泥尺寸的30,000分之1左右），
              比表面積可達2,600m2/g（是水泥比表面積的10,000倍左右），
              拉伸模量約為1,100GPa，斷裂強度為130GPa，是鋼鐵的100多倍。
-             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.高彈性：石墨烯彈性模量=1Tpa，具高剛性，彈性模量是一個材料抵抗形變的能力的度量值，
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> 高彈性：石墨烯彈性模量=1Tpa，具高剛性，彈性模量是一個材料抵抗形變的能力的度量值，
              1 TPa 意味著石墨烯在受到應力時，能夠非常有效地保持其結構和形狀，顯示出極高的剛性。
              
              <div style="text-align: center; margin: 20px 0;">
@@ -337,17 +401,48 @@
                     <iframe src="material_table.html" 
                     style="width: 70%; max-width: 800px; height: 350px; border: none; border-radius: 0;">
                 </iframe>
-                
-                
-            </p>
+</details>
+<details>
+             <summary><span class="arrow">➯</span><h4><strong> 1.3.2 電學性能 </strong></h4></summary>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> 高導電特性：電子遷移率在室溫下達 200,000 cm²/V·s，高於矽材料，使石墨烯在半導體及具潛力。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> 量子霍耳效應：石墨烯具獨特量子化電導，在不同溫度，都可觀察到此效應，量子霍耳效應是一種在二維電子系統中，低溫和強磁場觀察到的現象，通常表現電導的量子化，即電導值是基本常數的整數或分數倍。</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> 石墨烯電學性能受其六角形層狀對稱性影響。在翻轉對稱超晶格中可以觀察到拓譜電流，則雙層石墨烯因載流子相互作用形成對稱破壞性，當雙層石墨烯堆疊，
+                                        能帶隙為零，石墨烯層擾動、吸附摻雜、施加強柵壓都可打開能帶隙，雙層石墨烯能帶扭轉會間接影響能帶形狀，而使用電力機械特性可控制石墨烯之電力性能，
+                                        應變 300T 的偽磁場，也應變改變磁場調控石墨烯電子結構。</p>
 
-             <h4>1.3.2 力學性能</h4>
-             <p>1. 高強度：石墨烯的單片層厚度為0.35nm左右（只有水泥尺寸的30,000分之1左右），
-             比表面積可達2,600m2/g（是水泥比表面積的10,000倍左右），
-             拉伸模量約為1,100GPa，斷裂強度為130GPa，是鋼鐵的100多倍。
-             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.高彈性：石墨烯彈性模量=1Tpa，具高剛性，彈性模量是一個材料抵抗形變的能力的度量值，
-             1 TPa 意味著石墨烯在受到應力時，能夠非常有效地保持其結構和形狀，顯示出極高的剛性。
+    <div style="text-align: center; margin: 20px 0;">
+                <img src="Diraccone.png" 
+                    alt="導帶和價帶呈錐形分佈交於狄拉克點" 
+                    style="max-width: 100%; height: 300px; border: 1px solid #ccc; border-radius: 5px;">
+                <p style="font-size: 1.3rem; color: #666;"><strong>圖 1-5. 導帶和價帶呈錐形分佈交於狄拉克點</strong>
+                </p>
+                
+             </div>
+</details>
 
+<details>
+            <summary><span class="arrow">➯</span><h4><strong> 1.3.3 熱學性能 </strong></h4></summary>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> 極高熱導率: 石墨烯熱導率為5000W/mK，是熱導率極高的材料，此特性也使石墨烯成為散熱材料首選，特別在高功率電子器件和電池中，能有效的解決熱管理問題。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> 熱穩定性:在高溫環境下，石墨烯仍然保持極佳導熱性，這使它適合用於極端環境下的應用，如航太及高溫作業。</p>
+</details>
+<details>
+            <summary><span class="arrow">➯</span><h4><strong> 1.3.4 光學性能 </strong></h4></summary>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> 光透明性:單層石墨烯在可見光波的光學吸收率為2.3%，這使它在透明材料中極具發展潛力，如在太陽能電池OLED顯示螢幕中。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> 非線性光學特性: 石墨烯也表現出強大非線性光學效應，例如多光子吸收及光學限幅效應(指利用材料的光限幅效應保護眼睛和器件免受強激光傷害)使其在光學器件和激光技術中具有潛在應用。</p>
+</details>
+<details>
+            <summary><span class="arrow">➯</span><h4><strong> 1.3.5 化學性能 </strong></h4></summary>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> 表面化學活性: 儘管單層石墨烯的化學惰性較強，但可通過表面修飾、摻雜等方式來改變其化學性質，進而在催化、感測和能源儲存等領域都極具有應用潛力。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> 氧化還原性質: 石墨烯表面可透過氧化或還原方式做處理，從而形成不同性質衍生物，在電子、生醫、環境保護等領域，都展現了廣泛應用。</p>
+</details>
+</details>
+
+<details>
+        <summary><span class="arrow">➯</span><h3><strong>1.4 石墨烯應用</strong></h3></summary>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;石墨烯其優異物理、化學特性，被廣泛應用於多個領域，以下是一些主要應用，這些領域，展示了石墨烯在現代科技中的廣泛潛力，並預示著石墨烯在未來科技發展中將扮演更加重要的角色。</p>
+        <h3><strong>1.4.1 電子與光電元件</strong></h3>
+            <p>出色的電子遷移率及原子透明性，石墨烯在透明電導薄膜、FETs（場效晶體管)、太陽能電池等領域，都具巨大應用潛力。</p>
+            
 
 </p>
         </section>
