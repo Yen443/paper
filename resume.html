@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('head.jpg') no-repeat center center; /* 正確的背景圖片語法 */
+            background: url('background.jpg') no-repeat center center; /* 正確的背景圖片語法 */
             background-size: cover; /* 確保背景圖片覆蓋整個頁面 */
             color: #333;
         }
@@ -34,8 +34,8 @@
         }
 
         header h1 img {
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%; /* 圓形圖片 */
             border: 2px solid white; /* 添加邊框 */
         }
@@ -135,70 +135,132 @@
             <img src="head.jpg" alt="李彥鋒">
             李彥鋒
         </h1>
-        <p>碩士研究生 - 光電技術研究所</p>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#profile">個人資料</a></li>
-            <li><a href="#education">學歷</a></li>
-            <li><a href="#experience">工作經歷</a></li>
-            <li><a href="#skills">專業技能</a></li>
-            <li><a href="#projects">專案</a></li>
+            <li><a href="#profile"><strong>個人資料</strong></a></li>
+            <li><a href="#education"><strong>學歷</strong></a></li>
+            <li><a href="#experience"><strong>工作經歷</strong></a></li>
+            <li><a href="#skills"><strong>專業技能</strong></a></li>
+            <li><a href="#projects"><strong>專案</strong></a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main>
         <section id="profile">
-            <h2>個人資料</h2>
-            <div class="info">
-                <div><strong>姓名：</strong>李彥鋒</div>
-                <div><strong>電話：</strong>+886 123 456 789</div>
-                <div><strong>Email：</strong>yenfeng.li@example.com</div>
-                <div><strong>地址：</strong>台灣高雄市</div>
-            </div>
+            <h2><strong>自傳</strong></h2>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;現就讀於國立高雄科技大學光電所。期間獲得半導體製程、材料科學與電子工程等領域的專業知識，
+            並不斷深化我的技術能力。</p>
+            <p><strong>專題研究與成就：</strong></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在研究中，主要參與氧化鈦碳（TiOxC）沉積以還原氧化石墨烯（RGO）薄膜應用於充放電的研究。這項工作專注於能源儲存解決方案及材料創新，
+            期間培養薄膜沉積技術如PVD和CVD的實作技能，並理解如何優化材料特性以適應具體應用需求。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;該研究使我有機會在2023年於台灣鍍膜技術討論會（TACT）發表成果，報告主題包括奈米球有序堆疊多孔薄膜的成長及各類碳材料的應用。</p>
+            <p><strong>工作經歷：</strong></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通過實習與專業工作積累了豐富的實作經驗。從2021年至2022年，在新竹安宥科技公司擔任助理工程師，專注於IC佈局整合與除錯，
+            特別是先進製程如N5、N7 IC佈局整合及佈線。工作內容更涵蓋與設計RD討論，使電路達到理想狀態，常需規避ESD等問題，此經驗不僅了解半導體設計流程，
+            更提升個人與專業人士交流機會。</p> 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除了技術能力，也曾擔任雙語學校的營隊領隊，帶領並全程使用英語與小朋友簡單溝通。這段經歷提升簡化表達想法能力，
+            也學會在小組中與其他領隊討論、解決問題邏輯技巧。</p>
+            <p><strong>專業技能：</strong></p>
+            <p><strong>作業系統：</strong></p> 熟練使用Linux作業系統。
+            <p><strong>IC佈局軟體：</strong></p> 擅長使用Laker L3與Virtuoso進行IC佈局設計。
+            <p><strong>半導體設備：</strong></p> 精通PVD、CVD系統的操作，用於薄膜沉積與製程。
+            <p><strong>個人優勢：</strong></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多任務處理及學習能力： 能有效兼顧學術、工作及產業專業知識，促使我涉足多領域，拓展視野，並適應最新的技術。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研究能力及解決問題能力： 熱衷研究複雜問題，並不斷追求結果，為提升製程與設計貢獻力量。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;團隊合作與溝通能力： 擅長在多元團隊中協作，有助於團隊高效達成目標，並且具備優異的溝通技巧，
+            確保與同事和主管的順暢交流。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;領導力與執行力： 通過擔任領隊，學會如何快速決策、應對突發挑戰，並維持團隊間的協作環境。</p>
+            <p><strong>結論:</strong></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;對於擴展自己的知識與技能充滿熱情，期盼能在電子工程與材料科學領域中，為技術創新貢獻一己之力。</p>
+
         </section>
 
         <section id="education">
             <h2>學歷</h2>
             <ul>
-                <li><strong>國立高雄科技大學</strong> - 光電技術研究所 (2021 - 2024)</li>
-                <li><strong>國立中山大學</strong> - 材料科學學士 (2017 - 2021)</li>
+                <li><strong>國立高雄科技大學</strong> - 光電技術研究所 (2023 - 2025)</li>
+                <li><strong>南台科技大學</strong> - 電子工程系 (2018 - 2022)</li>
             </ul>
         </section>
 
         <section id="experience">
-            <h2>工作經歷</h2>
+            <h2><strong>工作經歷</strong></h2>
             <ul>
-                <li><strong>研究助理</strong> - 國立高雄科技大學 (2021 - 至今)</li>
-                <li><strong>IC 設計工程師</strong> - Anyou 科技 (2020 - 2021)</li>
+                <li><strong>研究助理</strong> - 國立高雄科技大學 (2023 - 至今)</li>
+                <li><strong>化學管路 配管工程師  </strong> - 瀚辰企業有限公司 (2022 - 2023)</li>
+                <li><strong>IC Layout 設計工程師  (實習)</strong> - 安宥科技股份有限公司 (2021 - 2022)</li>
             </ul>
         </section>
 
         <section id="skills">
-            <h2>專業技能</h2>
+            <h2><strong>專業技能</strong></h2>
             <ul>
-                <li>PVD 和 CVD 設備操作</li>
+                <li>PVD 和 CVD 設備 操作`維修</li>
+                <li>薄膜製程</li>
                 <li>半導體製程整合</li>
                 <li>IC 佈局設計 (Laker, Virtuoso)</li>
-                <li>熟悉 Linux 環境</li>
             </ul>
         </section>
 
         <section id="projects">
-            <h2>專案</h2>
+            <h2><strong>專案</strong></h2>
             <ul>
-                <li><strong>石墨烯製備研究</strong> - 發表於 2023 年台灣薄膜技術學會會議</li>
-                <li><strong>半導體元件模擬</strong> - 與 Anyou 科技合作</li>
+                <li><h1><strong>相關研究論文</strong></h1>
+                <p>以下為 TACT 2023 提交的論文，點擊下方連結或直接在網頁中查看。</p></li>
+            <!-- 下載 PDF -->
+            <p>
+                <a href="Paper(TACT2023).pdf" download style="text-decoration: none; color: blue;">
+                    各類碳奈米球序堆多孔薄膜生長.PDF
+             </a>
+    </p>
+    <p>
+                <a href="index.html" download style="text-decoration: none; color: blue;">
+                    碩士論文：化學氣相沉積製備鈦化碳/矽複合材料石墨烯儲能材料比較研究
+             </a>
+    </p>
+                <li><h1><strong>安宥科技股份有限公司</h1></li>
+                <p>IC Layout Design outsourcing vendor</p>
+                <p>participate 0.18um、0.25um MOSFET Mature process.</p>
+                <p>Project: TX/RX/LVDS analog layout IC design.</p>
+                <p>TSMC N3.N5.N7 FinFET Advanced process.</p>
+
+                <li><h1><strong>瀚辰企業有限公司</h1></li>
+                <p>Chimei Industrial barrel trough conveying and pumping equipment 
+                (engineering measurement, design, drawing, case construction).</p>
+
             </ul>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 李彥鋒</p>
+        <p><strong>&copy; 2024 李彥鋒</strong></p>
+                <div><strong>手機：</strong>
+                <a href="tel:+886962055321" style="text-decoration: none; color: #0071e3;">
+                +886 962 055 321
+                </a>
+                </div>
+                <strong>Mail：</strong>
+                <a href="mailto:a0962055321.com" target="_blank" style="text-decoration: none; color: #0071e3;">
+                a0962055321.com
+                </a>
+                <div>
+                <strong>LinkedIn：</strong>
+                <a href="https://www.linkedin.com/in/%E5%BD%A5%E9%8B%92-%E6%9D%8E-94636423a/" target="_blank" style="text-decoration: none; color: #0071e3;">
+                Yen - Feng , Li
+                </a>
+    </div>
+                <div><strong>Line ID：</strong>
+                <a href="https://line.me/ti/p/FQZ08HL3tw" target="_blank" style="text-decoration: none; color: #0071e3;">
+                    0962055321
+                </a>
+                </div>
+                <div><strong>地址：</strong>台灣 台南市 高雄市</div>
     </footer>
 
     <!-- Back to Home Button -->

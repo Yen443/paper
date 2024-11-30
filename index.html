@@ -18,16 +18,18 @@
     opacity: 0.95; /* 浮水印效果 */
 }
 
+
+
 @media (max-width: 768px) {
     nav a {
-        font-size: 0.9rem; /* 調整導航連結字體大小 */
+        font-size: 0.8rem; /* 調整導航連結字體大小 */
         margin: 0 10px; /* 減少按鈕之間的間距 */
     }
     header h1 {
-        font-size: 1.3rem; /* 減小標題字體大小 */
+        font-size: 1.0rem; /* 減小標題字體大小 */
     }
     header p {
-        font-size: 1rem; /* 減小副標題字體大小 */
+        font-size: 1.0rem; /* 減小副標題字體大小 */
     }
 }
 
@@ -66,6 +68,92 @@
             background: #0071e3;
             color: white;
         }
+
+/* 外部容器設置 */
+.resume-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* 調整文字與卡片的距離 */
+}
+
+/* 翻牌效果的卡片 */
+.flip-card {
+    width: 120px;
+    height: 120px;
+    perspective: 1000px; /* 3D 視角深度 */
+    overflow: visible;
+}
+
+/* 卡片內部 */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* 保持3D效果 */
+    transition: transform 0.4s ease-in-out; /* 初始翻轉動畫 */
+    animation: none; /* 默認無旋轉 */
+}
+
+/* 滑鼠懸停觸發旋轉 */
+.flip-card:hover .flip-card-inner {
+    animation: infinite-rotation 1s linear infinite; /* 懸停時無限旋轉 */
+}
+
+/* 卡片正面 */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* 隱藏背面 */
+    border-radius: 50%; /* 圓形效果 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+/* 正面設置 */
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 圖片自適應 */
+    border-radius: 50%;
+}
+
+/* 背面設置 */
+.flip-card-back {
+    background-color: #0071e3; /* 背面顏色 */
+    color: white;
+    transform: rotateY(180deg); /* 初始翻轉180度 */
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* 懸停時無限旋轉動畫 */
+@keyframes infinite-rotation {
+    from {
+        transform: rotateY(0deg); /* 起始角度 */
+    }
+    to {
+        transform: rotateY(360deg); /* 完成旋轉 */
+    }
+}
+a img {
+    transition: transform 0.2s ease; /* 添加輕微懸停效果 */
+}
+
+a img:hover {
+    transform: scale(1.05); /* 鼠標懸停時放大 */
+}
+
+/* 當鼠標移開時停止旋轉 */
+.flip-card-inner {
+    animation: none; /* 停止旋轉 */
+}
+
+
         header p {
             font-size: 2rem;
             color: #0071e3;
@@ -99,7 +187,7 @@
             color: #f5f5f7;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
         nav a:hover {
             text-decoration: underline;
@@ -136,11 +224,11 @@
             font-weight: 500;
         }
         footer {
-            background: #8686c2;
-            color: #ada7d4;
+            background: #9191db;
+            color: #c2bbf0;
             text-align: center;
             padding: 20px 0;
-            font-size: 0.9rem;
+            font-size: 1.3rem;
         }
 
         main section h4 {
@@ -219,26 +307,32 @@
     
 </head>
 <body>
+
     <header>
         
         <p>碩士論文：化學氣相沉積製備鈦化碳</p>
         <p>/矽複合材料石墨烯儲能材料比較研究</p>
-        <h1>
-        <div class="click-text">
-            履歷表點擊 <span class="arrow">➯</span>
-            
-            <a href="resume.html">李彥鋒</a>
-        
-        </div>
+
+        <div class="resume-section">
+        <p>履歷表點擊<span class="arrow">➯</span></p>
+        <a href="resume.html" target="_self">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="head.jpg" alt="李彥鋒">
+                </div>
+                <div class="flip-card-back">
+        </a>
         </h1>
     </header>
+
     <nav>
-        <a href="#abstract">摘要</a>
-        <a href="#chapter1">緒論</a>
-        <a href="#chapter2">文獻探討</a>
-        <a href="#chapter3">實驗流程</a>
-        <a href="#chapter4">分析與討論</a>
-        <a href="#chapter5">結論與展望</a>
+        <a href="#abstract"><strong>摘要</strong></a>
+        <a href="#chapter1"><strong>緒論</strong></a>
+        <a href="#chapter2"><strong>文獻探討</strong></a>
+        <a href="#chapter3"><strong>實驗流程</strong></a>
+        <a href="#chapter4"><strong>分析與討論</strong></a>
+        <a href="#chapter5"><strong>結論與展望</strong></a>
     </nav>
     <main>
         <section id="abstract">
@@ -276,6 +370,7 @@
     font-size: 1.5rem; /* 與文字大小一致 */
     transition: transform 0.3s ease; /* 添加旋轉動畫 */
 }
+
 
 summary:hover .arrow {
     transform: rotate(90deg); /* 懸停時旋轉90度 */
@@ -1146,7 +1241,7 @@ summary:hover .arrow {
     </main>
     <button id="toTop">↑</button>
     <footer>
-        <p>&copy; 2024 碩士論文 - 李彥鋒</p>
+        <p><strong>&copy; 2024 碩士論文 - 李彥鋒</strong></p>
     </footer>
     <script>
         const toTopButton = document.getElementById('toTop');
