@@ -31,6 +31,15 @@
     header p {
         font-size: 1.0rem; /* 減小副標題字體大小 */
     }
+
+    .resume-section {
+        flex-direction: column; /* 將元素堆疊顯示 */
+        gap: 10px; /* 間距縮小 */
+    }
+    .flip-card {
+        width: 80px; /* 縮小圖片大小 */
+        height: 80px;
+    }
 }
 
 
@@ -42,7 +51,7 @@
     }
 }
         header {
-            height: 1000px;
+            min-height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -50,6 +59,10 @@
             background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
             color: #333;
             text-align: center;
+            img {
+    max-width: 100%;
+    height: auto;
+}
         }
         header h1 {
             font-size: 2.5rem;
@@ -310,10 +323,10 @@ a img:hover {
                 height: 200px;
             }
             header h1 {
-                font-size: 1.8rem;
+                font-size: 1.0rem;
             }
             header p {
-                font-size: 1.5rem;
+                font-size: 1.0rem;
             }
         }
         @media (max-width: 480px) {
@@ -321,10 +334,10 @@ a img:hover {
                 padding: 10px;
             }
             main section h2 {
-                font-size: 1rem;
+                font-size: 0.6rem;
             }
             nav a {
-                font-size: 0.8rem;
+                font-size: 0.6rem;
             }
         }
     </style>
