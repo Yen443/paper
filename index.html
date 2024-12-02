@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>碩士論文 - 李彥鋒</title>
@@ -17,8 +19,6 @@
     color: #1d1d1f;
     opacity: 0.95; /* 浮水印效果 */
 }
-
-
 
 @media (max-width: 768px) {
     nav a {
@@ -304,16 +304,18 @@ a img:hover {
             }
         }
     </style>
-    
+            
+
 </head>
 <body>
 
     <header>
-        
+
         <p>碩士論文：化學氣相沉積製備鈦化碳</p>
         <p>/矽複合材料石墨烯儲能材料比較研究</p>
 
         <div class="resume-section">
+        
         <p>履歷表點擊<span class="arrow">➯</span></p>
         <a href="resume.html" target="_self">
         <div class="flip-card">
@@ -321,9 +323,33 @@ a img:hover {
                 <div class="flip-card-front">
                     <img src="head.jpg" alt="李彥鋒">
                 </div>
-                <div class="flip-card-back">
         </a>
         </h1>
+
+
+<script>
+    gsap.from("header", {
+        duration: 3.0,   // 動畫持續時間
+        opacity: 0,      // 從透明開始
+        y: -50,          // 向下移動 50px
+        ease: "power2.out" // 動畫緩動效果
+    });
+
+    gsap.from("nav a", {
+        duration: 1,     // 每個鏈接的動畫持續時間
+        opacity: 0,      // 從透明開始
+        x: -100,         // 從左側移入
+        stagger: 0.3,    // 每個鏈接間隔 0.3 秒
+        ease: "power1.out"
+    });
+
+    gsap.from(".flip-card", {
+        duration: 2,
+        rotationY: 360,  // 3D 翻轉效果
+        ease: "elastic.out(1, 0.3)" // 彈性效果
+    });
+</script>
+
     </header>
 
     <nav>
