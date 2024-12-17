@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -1205,6 +1206,47 @@ summary:hover .arrow {
                 <p style="font-size: 1.3rem; color: #666;"><strong>圖3- 11 高溫二維X-ray廣角繞射儀(粉末X光二維繞射&低掠角薄膜X光繞射儀)</strong>
              </div>
 </details>
+
+
+<details>
+            <summary><span class="arrow">➯</span><h4><strong>3.2.6 前瞻聚焦離子束系統（Advanced Focused Ion Beam System - FIB）</strong></h4></summary> 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIB 系統在樣品製備中的功能非常關鍵，特別是在高分辨率電子顯微鏡（如透射電子顯微鏡，TEM）分析中，
+            製備超薄樣品的精度和效率是研究成功的關鍵。以下針對 FIB 的製樣功能進行詳細說明。
+            <p><strong>1. TEM 樣品製備</strong></p> 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEM 需要極薄的樣品（通常厚度低於 100 nm），FIB 系統因其高精度離子束加工能力，成為 TEM 樣品製備的首選工具。
+            <p><strong> 1.1	製樣流程 </strong></p> 
+            <p>(1)	表面沉積保護層：在樣品表面沉積一層保護材料（如鉑或碳），防止加工過程中離子束對表面結構的損傷。使用 FIB-CVD 技術（離子束輔助化學氣相沉積）完成保護層沉積。</p>
+            <p>(2)	粗加工：使用高電流離子束在樣品的指定區域進行快速材料去除，切割出大致的薄片輪廓。</p>
+            <p>(3)	精細加工：使用低電流離子束逐步減薄樣品，對指定區域進行精加工，確保樣品厚度達到透射電子的要求。</p>
+            <p>(4)	雙束協作（FIB-SEM 系統）：在 FIB 與 SEM 結合系統中，SEM 提供高分辨率影像輔助製樣過程，實現準確定位和厚度控制。</p>
+            <p>(5)	最終拋光：使用低能量的離子束（如 5 kV 或更低）對樣品進行最後的拋光，減少加工過程中產生的表面損傷。</p>
+            <p>(6)	特點與優勢:</p>
+            <p>🌟	可實現精確定位的亞微米級切割。</p>
+            <p>🌟	適用於多種材料（如金屬、陶瓷、複合材料等）。</p>
+            <p>🌟	樣品可直接用於高分辨率 TEM 觀測，適用於晶體結構和缺陷分析。</p>
+
+            <p><strong> 2. 橫截面樣品製備 </strong></p>
+            FIB 在製備橫截面樣品（cross-section samples）時，能展示樣品內部結構，廣泛應用於半導體、材料科學與地質領域。
+            <p><strong> 2.1	製樣流程  </strong></p>
+            <p>(1)	區域選擇：用 SEM 成像功能選擇需要切割的區域，確保觀察的目標位置正確。</p>
+            <p>(2)	切割與開槽：使用高電流離子束切割樣品表面形成橫截面，切口兩側通常會開槽以便於觀察。</p>
+            <p>(3)	精細橫截面加工：使用低電流離子束清理橫截面表面，確保切割面平整且無損傷。</p>
+            <p>(4)	表面修飾：橫截面上沉積保護層或執行最終拋光。</p>
+            <p>(5)	特點與應用:</p>
+            <p>🌟	快速製備清晰的橫截面結構，用於材料內部形貌觀察和缺陷分析。</p>
+            <p>🌟	半導體晶片製程中，用於檢查晶體管結構、薄膜層結構與介特性。</p>
+
+            <div style="text-align: center; margin: 20px 0;">
+        <video controls style="max-width: 70%; height: 350px; border: 1px solid #ccc; border-radius: 5px;">
+        <source src="FIBCUT.mp4" type="video/mp4">
+        
+        </video>
+    <p style="font-size: 1.3rem; color: #666;"><strong>圖3-12 FIB 橫截面樣品示意圖</strong></p>
+</div>
+
+</details>
+
+
 </details>            
 
 
@@ -1284,10 +1326,85 @@ summary:hover .arrow {
 </details>
 
 <details>
-            <summary><span class="arrow">➯</span><h3><strong>4.2 不同退火溫度之影響</strong></h3></summary>
+            <summary><span class="arrow">➯</span><h3><strong>4.2 TEM結果討論分析</strong></h3></summary>
 
-        </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本論文首先研究以退火溫度700℃、800℃及900℃，分析不同退火溫度對於銅-矽薄膜之關係，
-        隨後研究不同退火溫度對於樣品之影響，找出最佳退火溫度。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本研究利用透射電子顯微鏡（TEM）觀察分析，探討退火溫度與持溫時間對於薄膜結構與層狀生長的影響。
+        透過TEM影像可清楚觀察到，隨著退火條件的改變，TiC-Si薄膜內部的微觀結構出現顯著差異：</p>
+        <strong><p>1.	層狀結構與厚度分析：</p></strong>
+        <p>TEM影像顯示，當退火溫度提高至900°C且持溫時間延長時，石墨烯層數顯著增加，且層間距均勻性改善。
+        此外，升溫速率的控制亦影響層狀結構的形成，過快的升溫速率可能導致缺陷的累積與結構不完整。</p>
+        <div style="text-align: center; margin: 20px 0;">
+                <img src="cosmix.png" 
+                    alt="橫截面樣品在TEM 下影像" 
+                    style="max-width: 70%; height: 350px; border: 1px solid #ccc; border-radius: 5px;">
+                <p style="font-size: 1.3rem; color: #666;"><strong>圖4- 3 橫截面樣品在TEM 下影像</strong>
+             </div>
+        <strong><p>2.	層狀結構的形成：</p></strong>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEM影像中(圖4-3)可以觀察到層狀結構的形成與排列特徵。研究發現，在較低升溫速率下（如3°C/min），層狀結構具有更明顯的堆疊一致性，
+        而較高的升溫速率（如10°C/min）則導致層狀結構的取向混亂，晶界增多。</p>
+        <strong><p>3.	界面反應與晶體結構：</p></strong>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;透過高解析TEM（HRTEM）進一步分析發現，TiC與Si之間的界面在不同退火條件下呈現出不同的晶體結構。
+        較高退火溫度下，界面處有明顯的碳化層生成，且出現石墨烯片層結構。這與能量分散X射線譜（EDS）的分析結果相符。</p>
+        <strong><p>4.	缺陷與晶界密度：</p></strong>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退火時間過長會導致層狀結構內部缺陷密度升高，TEM影像中可以觀察到邊緣不完整的石墨烯層以及局部的晶格扭曲。</p>
+        <strong><p>最佳參數的探討：</p></strong>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根據TEM影像的觀察結果，結合層數分析與缺陷密度對應的條件，本研究認為退火溫度控制在900°C、升溫速率設定為5°C/min、持溫時間為30分鐘時，
+        可得到層數均勻且缺陷較少的石墨烯層。</p>
+
+        <details>
+            <summary><span class="arrow">➯</span><h4><strong>4.2.1 鈦碳-矽薄膜生長少層石墨烯機制</strong></h4></summary>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在此實驗中，我們針對 TiC-Si 多層薄膜進行了高溫退火處理，以評估石墨烯的生成條件與層數控制。
+            薄膜經 900°C 高溫退火一小時，置於 3% 氫氣與 97% 氬氣的還原氣氛中進行處理。經高解析度透射電子顯微鏡（HR-TEM）分析，獲得了如圖所示的影像。</p>
+        <div style="text-align: center; margin: 20px 0;">
+                <img src="grall.png" 
+                    alt="石磨烯層狀結構" 
+                    style="max-width: 70%; height: 350px; border: 1px solid #ccc; border-radius: 5px;">
+                <p style="font-size: 1.3rem; color: #666;"><strong>圖4- 4 石磨烯層狀結構</strong>
+             </div>    
+             <p><strong> (1)	石墨烯層數與結構</strong></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;從影像中可以清晰觀察到，經過退火處理後，在 TiC-Si 層表面形成了一層具有良好晶體結構的石墨烯層。
+                圖中 (a) 標示出晶格間距約為 0.34 nm，(b-1)、(b-2)、(c) 則是不同位置在TEM 800K、500K 倍率下影像，與文獻中報導的石墨烯（002）晶面間距相符，
+                證實了石墨烯的生成。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在 900°C 的退火溫度下，碳原子從 TiC 結構中逐步釋放，並在表面通過自我組裝過程形成石墨烯層。
+            該過程受高溫促進，並受到基材中矽的影響，可能進一步提升了碳原子的重排效率。觀察到的少層石墨烯，表明退火時間（1 小時）在目前溫度條件下接近最佳值。</p>
+        <p><strong>(2)	生成機制探討</strong></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退火過程中，TiC 中的碳可能經由表面擴散和析出，矽層可能起到了穩定碳原子的作用，
+        進一步促進了晶體結構的形成。此外，氫氣的還原作用抑制了碳的過度氧化，確保了高品質石墨烯的生成。
+        根據此結果，延長退火時間或增加溫度可能會進一步增加層數。</p>
+        <p><strong>(3)	結論</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上述結果表明，通過控制 TiC-Si 薄膜的結構與退火條件，可以實現少層石墨烯的可控合成，為高性能材料的製備提供了可靠的技術支持。
+
+</details>
+
+
+
+<details>
+            <summary><span class="arrow">➯</span><h4><strong>4.2.2 鈦碳-矽薄膜生長少層石墨烯機制</strong></h4></summary>
+            <p>🌟	石墨烯拉曼光譜分析
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;針對 A1、A2 樣品的光譜數據進行了統整分析，並提取以下關鍵參數：</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1)	FWHM（半高寬）：測量峰的寬度，反映晶粒尺寸及結構均勻性。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)	積分面積：表示光譜信號的總量，與材料結構完整性相關。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3)	結晶尺寸：基於 Scherrer 公式計算，代表材料的微觀結構特性。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scherrer公式是一種用於估算材料晶粒尺寸的經典公式，廣泛應用於X射線衍射（XRD）和拉曼光譜中，
+            用於分析結晶材料的微觀結構特性。</p>
+            <p>公式表達為：</p>
+            <div style="text-align: center; margin: 20px 0;">
+                    <iframe src="Scherrer Formula.html" 
+                    style="width: 100%; max-width: 800px; height: 500px; border: none; border-radius: 0;">
+                </iframe>
+            </div>  
+
+</p>
+        <div style="text-align: center; margin: 20px 0;">
+                <img src="grall.png" 
+                    alt="石磨烯層狀結構" 
+                    style="max-width: 70%; height: 350px; border: 1px solid #ccc; border-radius: 5px;">
+                <p style="font-size: 1.3rem; color: #666;"><strong>圖4- 4 石磨烯層狀結構</strong>
+             </div>    
+
+</details>
+
+
 </details> 
 <details>
 <summary><span class="arrow">➯</span><h4><strong>4.2.1 不同退火溫度對鈦碳-矽薄膜之影響</strong></h4></summary>

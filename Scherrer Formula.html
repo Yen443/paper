@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scherrer Formula</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .formula-container {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .formula {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 1em;
+            color: #555;
+        }
+        .example {
+            background: #f4f4f4;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formula-container">
+        <h1>Scherrer Formula</h1>
+        <p class="description">Scherrer 公式用於根據 X 射線衍射峰的展寬來估計材料中微晶（晶粒）的尺寸。</p>
+        <div class="formula">
+            <p>\[ D = \frac{k \cdot \lambda}{\beta \cdot \cos(\theta)} \]</p>
+        </div>
+        <p class="description">
+            Where:
+            <ul>
+                <li><strong>D</strong> = 晶粒尺寸 (in nm or Å)</li>
+                <li><strong>k</strong> = 形狀係數 (usually 0.9)</li>
+                <li><strong>\( \lambda \)</strong> = X-ray 波長 (in nm)</li>
+                <li><strong>\( \beta \)</strong> = 衍射峰的全寬半高（FWHM），單位為弧度。</li>
+                <li><strong>\( \theta \)</strong> = 衍射角（布拉格角）</li>
+            </ul>
+        </p>
+        
+    </div>
+</body>
+</html>
